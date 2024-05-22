@@ -1,63 +1,76 @@
 @import '../css/variables.css';
 
-.topo-site{
+.container {
+    padding: 20px;
+}
+
+
+.topo-site {
     background-color: var(--primaryColor);
     height: 300px;
+    display: flex;
     align-items: center;
+    justify-content: center;
 
-    .text-topo{
+    .text-topo {
         text-align: center;
         padding: 15px 4% 0 4%;
 
-        h1{
-            font-size: 80px;
+        h1 {
+            font-size: 4rem;
             font-family: var(--primaryFont);
             font-weight: bold;
         }
 
-        p{
-            margin-top: -50px;
-            font-size: 20px;
+        p {
+            margin-top: -20px;
+            font-size: 1.25rem;
             font-weight: bolder;
         }
 
-        Button{
+        Button {
             padding: 17px 4%;
             border: 0;
             border-radius: 25px;
             font-family: var(--primaryFont);
-            font-size: 15px;
-            
-            
-            transition: 2s;
+            font-size: 1rem;
+
+
+            transition: 0.2s;
         }
 
-        Button:Hover{
+        Button:Hover {
             transform: scale(1.1);
         }
     }
 }
 
-.logo{
+.logo {
     position: absolute;
     background-color: var(--lightColor);
     border: 0;
-    padding: 10px 10px;
+    padding: 10px;
     border-radius: 50%;
-    margin-top: -80px;
-    margin-left: 80px;
+    top: 49%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    .imgLogo{
-        height: 80px;
-        width: 80px;
+    .imgLogo {
+        height: 10vw;
+        width: 10vw;
+        max-height: 80px;
+        max-width: 80px;
     }
 }
 
-.title{
+.title {
     text-align: center;
     margin-top: -15px;
 
-    h1{
+    h1 {
         background-color: var(--lightColor);
         position: relative;
         margin: auto;
@@ -67,12 +80,80 @@
         width: 400px;
     }
 
-    hr{
+    hr {
         margin-top: -2px;
         z-index: 0;
     }
 
-    span{
+    span {
         color: var(--secondaryColor);
     }
-} 
+}
+
+.sessionCard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+
+    .cardGroup {
+        margin: 10px;
+        flex: 1;
+
+        .custom-card {
+            border: 1px solid #707070;
+            box-shadow: 6px 6px 6px #000000;
+            border-radius: 15px;
+            margin: 10px;
+            flex: 1;
+            
+
+            width: 100%;
+            height: 100%;
+            max-width: 300px;
+            max-height: 312px;
+/* 
+            .iconBox {
+                margin-top: 20px;
+                align-items: center;
+                text-align: center;
+                margin: 0 auto;
+            } */
+
+            .card-body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+
+                
+            }
+
+            .card-title {
+                font-size: 1.25rem;
+                font-weight: bold;
+                margin: 20px 0;
+            }
+
+            .card-text {
+                margin-top: 5px;
+                font-size: 1rem;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        top: 40%;
+    }
+
+    .imgLogo {
+        height: 14vw;
+        width: 14vw;
+        max-height: 50px;
+        max-width: 50px;
+    }
+}
