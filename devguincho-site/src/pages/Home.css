@@ -1,0 +1,78 @@
+@import '../css/variables.css';
+
+.topo-site{
+    background-color: var(--primaryColor);
+    height: 300px;
+    align-items: center;
+
+    .text-topo{
+        text-align: center;
+        padding: 15px 4% 0 4%;
+
+        h1{
+            font-size: 80px;
+            font-family: var(--primaryFont);
+            font-weight: bold;
+        }
+
+        p{
+            margin-top: -50px;
+            font-size: 20px;
+            font-weight: bolder;
+        }
+
+        Button{
+            padding: 17px 4%;
+            border: 0;
+            border-radius: 25px;
+            font-family: var(--primaryFont);
+            font-size: 15px;
+            
+            
+            transition: 2s;
+        }
+
+        Button:Hover{
+            transform: scale(1.1);
+        }
+    }
+}
+
+.logo{
+    position: absolute;
+    background-color: var(--lightColor);
+    border: 0;
+    padding: 10px 10px;
+    border-radius: 50%;
+    margin-top: -80px;
+    margin-left: 80px;
+
+    .imgLogo{
+        height: 80px;
+        width: 80px;
+    }
+}
+
+.title{
+    text-align: center;
+    margin-top: -15px;
+
+    h1{
+        background-color: var(--lightColor);
+        position: relative;
+        margin: auto;
+        margin-top: 25px;
+        padding-bottom: 10px;
+        z-index: 2;
+        width: 400px;
+    }
+
+    hr{
+        margin-top: -2px;
+        z-index: 0;
+    }
+
+    span{
+        color: var(--secondaryColor);
+    }
+} 

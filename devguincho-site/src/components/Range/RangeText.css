@@ -1,0 +1,15 @@
+@import '../../css/variables.css';
+
+.range{
+    background-color: var(--thirdColor);
+    height: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+    margin:  auto;
+
+    p{
+        color: var(--lightColor);
+    }
+}
