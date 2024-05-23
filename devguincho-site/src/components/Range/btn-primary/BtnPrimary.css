@@ -1,0 +1,38 @@
+@import '../../../css/variables.css';
+
+.btn{
+    border: none;
+    border-radius: 30px;
+
+    cursor: pointer;
+    padding: 20px 40px;
+
+    &:disabled{
+        opacity: 0.6;
+    }
+
+    &:primary{
+        color: var(--primaryText);
+        background: -webkit-linear-gradient(180deg, var(--primaryColor, var(--secondaryColor)));
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    &:secondary{
+        background: var(--ligthColor);
+        color: var(--primaryText);
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 1080px){
+    .btn{
+        padding: 10px 4%;
+
+        &:secondary{
+            font-size: 22px;
+            padding: 12px 30px;
+        }
+    }   
+}
