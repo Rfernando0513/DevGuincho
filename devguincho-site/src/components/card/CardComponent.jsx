@@ -1,39 +1,52 @@
-import React from "react";
-import { Card as BootstrapCard, Button } from 'react-bootstrap'
+// import React, { useState } from 'react';
+// import { Card as BootstrapCard, CardGroup, Button } from 'react-bootstrap';
+// // import comments from './comments.json'; // Importe o JSON com os comentários
 
-function Card({ comment, handleFlip }) {
-    return (
-        <BootstrapCard style={{width: '18rem'}}>
-            <BootstrapCard.Img variant="top" src={comment.photo} />
-            <BootstrapCard.Body>
-                <BootstrapCard.Title>{comment.name}</BootstrapCard.Title>
-                <BootstrapCard.Text>{comment.text}</BootstrapCard.Text>
-                <div className="rating">
-                    {'#'.repeat(comment.rating)}
-                </div>
-                <Button variant="primary" onClick={handleFlip}> <i className="bi bi-arrow-right-circle-fill"></i> </Button>
-            </BootstrapCard.Body>
-        </BootstrapCard>
-    )
-}
+// const CardComponent = () => {
+//   const [currentComment, setCurrentComment] = useState(comments[0]);
 
-export default Card;
+//   const changeComment = () => {
+//     const randomIndex = Math.floor(Math.random() * comments.length);
+//     setCurrentComment(comments[randomIndex]);
+//   };
 
-const App = () =>{
-    const [currentComments, setComment] = useState(comments[0])
+//   return (
+//     <div className="col-sm-4">
+//       <CardGroup className="cardGroup">
+//         <BootstrapCard className="custom-card">
+//           <BootstrapCard.Body className="text-center">
+//             <img src={currentComment.photo} alt={currentComment.name} className="img-fluid mb-3" />
+//             <BootstrapCard.Title>{currentComment.name}</BootstrapCard.Title>
+//             <BootstrapCard.Text>{currentComment.text}</BootstrapCard.Text>
+//             <div className="rating">
+//               {'⭐'.repeat(currentComment.rating)}
+//             </div>
+//             <Button variant="primary" onClick={changeComment} className="mt-3">Trocar Comentário</Button>
+//           </BootstrapCard.Body>
+//         </BootstrapCard>
+//       </CardGroup>
+//     </div>
+//   );
+// };
 
-    const changeComment = () => {
-        const randomIndex = Math.floor(Math.random() * comments.length);
-        setCurrentComment(comments[randomIndex]);
-    };
+// export default CardComponent;
 
-    return (
-        <div className="app d-flex flex-column align-items-center mt-5">
-            <Card comment={currentComments} handleFlip={changeComment} />
 
-        </div>
-    )
+// //  const App = () =>{
+// //      const [currentComments, setComment] = useState(comments[0])
 
-}
+// //      const changeComment = () => {
+// //          const randomIndex = Math.floor(Math.random() * comments.length);
+// //          setCurrentComment(comments[randomIndex]);
+// //      };
 
-export default App;
+// //      return (
+// //          <div className="app d-flex flex-column align-items-center mt-5">
+// //              <Card comment={currentComments} handleFlip={changeComment} />
+
+// //          </div>
+// //      )
+
+// //  }
+
+// //  export default {App, CardComponent};

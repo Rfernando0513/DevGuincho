@@ -37,6 +37,7 @@
 
             cursor: pointer;
             transition: 0.2s;
+            background-color: var(--lightColor);
         }
 
         Button:hover {
@@ -143,10 +144,12 @@
 }
 
 .benefit-section {
+    padding: 0 4%;
     display: flex;
-    flex-direction: block;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+
 
     gap: 70px;
 
@@ -264,7 +267,7 @@
 
 }
 
-.section-cards{
+.section-cards {
     height: 600px;
 }
 
@@ -280,3 +283,20 @@
         max-width: 50px;
     }
 }
+
+@media (min-width: 1080px) {
+
+    .benefit-section {
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+
+    .benefit-data h2 {
+        padding: 0 4%;
+        text-align: center;
+    }
+
+}
+

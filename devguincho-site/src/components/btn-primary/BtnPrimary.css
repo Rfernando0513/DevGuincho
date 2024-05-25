@@ -1,11 +1,11 @@
-@import '../../../css/variables.css';
+@import '../../css/variables.css';
 
 .btn-section{
     padding-top: 90px;
     padding-bottom: 40px;
 }
 
-.btn {
+.btnText {
     border: none;
     border-radius: 30px;
     cursor: pointer;
@@ -14,10 +14,21 @@
     background: -webkit-linear-gradient(180deg, var(--primaryColor), var(--secondaryColor));
     font-size: 24px;
     font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.2s;
+
+    .btnText:hover {
+        transform: scale(1.1);
+    }
+  
 }
 
+
+
+
 @media screen and (max-width: 1080px) {
-    .btn {
+    .btnText {
         padding: 10px 4%;
     }
 }

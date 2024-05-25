@@ -1,6 +1,6 @@
 import React from "react";
 import './BtnPrimary.css'
-import { Button } from "react-bootstrap";
+
 
 
 function BtnPrimary({ btnText }) {

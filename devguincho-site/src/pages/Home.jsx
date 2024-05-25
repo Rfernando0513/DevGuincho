@@ -1,11 +1,11 @@
 import './Home.css';
 import { Button, Card, CardGroup, Form } from 'react-bootstrap'
-import RangeText from "../components/range/RangeText.jsx";
+import RangeText from "../components/Range/RangeText.jsx";
 import * as Icon from 'react-bootstrap-icons';
-import BtnPrimary from "../components/range/btn-primary/BtnPrimary.jsx";
+import BtnPrimary from "../components/btn-primary/BtnPrimary.jsx";
 import InputGroup from 'react-bootstrap/InputGroup';
 import { IMaskInput } from "react-imask";
-import CardComponent from '../components/card/CardComponent.jsx';
+// import CardComponent from '../components/card/CardComponent.jsx';
 
 
 
@@ -21,7 +21,7 @@ function Home() {
                         <div className="text-topo">
                             <h1>DEV GUINCHO</h1>
                             <p>Tecnologia em movimento</p>
-                            <Button variant="light">FAÇA UM ORÇAMENTO</Button>{''}
+                            <Button variant="light">FAÇA UM ORÇAMENTO</Button>
                         </div>
                     </div>
                 </div>
@@ -81,7 +81,7 @@ function Home() {
                         </CardGroup>
                     </div>
                 </div>
-                <div class="row benefit-section pad-10">
+                <div class="row benefit-section">
                     <div class="benefit-data">
                         <h2>95% das <br />
                             empresas</h2>
@@ -109,7 +109,7 @@ function Home() {
                                     <Form.Control
                                         as={IMaskInput}
                                         mask="00000-000"
-                                        placeholder="DESTINO:"
+                                        placeholder="ORIGEM:"
                                         inputmode="numeric"
                                         style={{ color: 'white', fontSize: '22.5px' }}
                                         className='FormControlOrcamento'
@@ -135,11 +135,11 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="row">
+                {/* <div className="row">
                     <div className="section-cards">
                         <CardComponent />
                     </div>
-                </div>
+                </div> */}
             </div>
         </>
     )
