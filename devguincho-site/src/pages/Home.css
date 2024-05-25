@@ -124,7 +124,7 @@
                 text-align: center;
                 padding-top: 40px;
 
-                
+
             }
 
             .card-title {
@@ -142,7 +142,7 @@
     }
 }
 
-.benefit-section{
+.benefit-section {
     display: flex;
     flex-direction: block;
     align-items: center;
@@ -154,7 +154,7 @@
         border-bottom: 10px solid var(--primaryColor);
         padding-bottom: 40px;
 
-        h2{
+        h2 {
             font-size: 60px;
             font-weight: 600;
             font-family: "Roboto", sans-serif;
@@ -162,13 +162,13 @@
         }
     }
 
-    p{
+    p {
         font-size: 40px;
         font-style: italic;
         font-weight: 300;
 
-        b{
-            background: -webkit-linear-gradient(180deg, var(--primaryColor),var(--secondaryColor));
+        b {
+            background: -webkit-linear-gradient(180deg, var(--primaryColor), var(--secondaryColor));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-style: normal;
@@ -177,13 +177,96 @@
     }
 }
 
-.cta-section{
+.cta-section {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.form-section {
+    height: 500px;
+    background-color: var(--thirdColor);
+    display: flex;
+    justify-content: center;
+    gap: 20%;
 
+    .robo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .roboImg {
+            max-height: 368px;
+            max-width: 368px;
+        }
+    }
+}
+
+.formGroup {
+    display: flex;
+    justify-content: left;
+}
+
+.form {
+    color: var(--lightColor);
+    /* margin: auto; */
+
+    h1 {
+        text-align: center;
+        margin: 40px;
+    }
+
+    p {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .formOrcamento {
+        align-items: center;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 5px;
+
+        .FormControlOrcamento {
+            padding: 10px 4%;
+            background-color: var(--fourthColor);
+            border-radius: 30px;
+            height: 59px;
+            width: 371px;
+        }
+    }
+
+    .formOrcamento input::placeholder {
+        color: white;
+        font-size: 22.5px;
+        text-align: start;
+    }
+
+    .btnSession {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+        margin-top: 2px;
+
+        .btnOrcamento {
+            height: 44px;
+            width: 165px;
+            color: var(--secondaryColor);
+            background-color: #FFFFFF;
+
+            text-align: center;
+            font-size: 18px;
+            border: 0;
+            border-radius: 26px;
+        }
+    }
+
+}
+
+.section-cards{
+    height: 600px;
+}
 
 @media (max-width: 480px) {
     .logo {
@@ -196,6 +279,4 @@
         max-height: 50px;
         max-width: 50px;
     }
-
- 
 }

@@ -1,20 +1,17 @@
-import React, {useState} from "react";
 import './Home.css';
-import { Button, Card, CardGroup } from 'react-bootstrap'
+import { Button, Card, CardGroup, Form } from 'react-bootstrap'
 import RangeText from "../components/range/RangeText.jsx";
 import * as Icon from 'react-bootstrap-icons';
 import BtnPrimary from "../components/range/btn-primary/BtnPrimary.jsx";
+import InputGroup from 'react-bootstrap/InputGroup';
+import { IMaskInput } from "react-imask";
+import CardComponent from '../components/card/CardComponent.jsx';
+
+
 
 function Home() {
-    const [isLoading, setIsLoading] = useState(false);
 
-    const handleClick = () => {
-        setIsLoading(true);
-        
-        setTimeout(() => {
-          setIsLoading(false);
-        }, 2000);
-      };
+
 
     return (
         <>
@@ -93,14 +90,57 @@ function Home() {
                 </div>
             </div>
             <div className="row cta-section">
-                <BtnPrimary 
+                <BtnPrimary
                     btnText="VEJA COMO É SIMPLES"
-                    variant="primary"
-                    disabled={isLoading}
-                    loading={isLoading}
-                    onClick={handleClick}
                 />
-            </div> 
+            </div>
+            <div className="row">
+                <div className="form-section cl-sm-2">
+                    <div className="cl-sm-12 robo">
+                        <img className='roboImg' src="img/robo.png" alt="robo" />
+                    </div>
+                    <div className="cl-sm-6 form">
+                        <h1>ORÇAMENTO RAPIDO</h1>
+                        <p>Calcule seu frete e leve seus sonhos ainda mais longe!<br /> Preencha os campos abaixo com os cep e descubra como<br /> podemos tornar sua experiência ainda mais especial.</p>
+
+                        <div className="formGroup">
+                            <div>
+                                <InputGroup className="mb-3 formOrcamento">
+                                    <Form.Control
+                                        as={IMaskInput}
+                                        mask="00000-000"
+                                        placeholder="DESTINO:"
+                                        inputmode="numeric"
+                                        style={{ color: 'white', fontSize: '22.5px' }}
+                                        className='FormControlOrcamento'
+                                    />
+                                </InputGroup>
+
+                                <InputGroup className="mb-3 formOrcamento">
+                                    <Form.Control
+                                        as={IMaskInput}
+                                        mask="00000-000"
+                                        placeholder="DESTINO:"
+                                        inputmode="numeric"
+                                        style={{ color: 'white', fontSize: '22.5px' }}
+                                        className='FormControlOrcamento'
+                                    />
+                                </InputGroup>
+                                <div className="btnSession">
+                                    <button className='btnOrcamento'>
+                                        Calcular
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="section-cards">
+                        <CardComponent />
+                    </div>
+                </div>
+            </div>
         </>
     )
 }

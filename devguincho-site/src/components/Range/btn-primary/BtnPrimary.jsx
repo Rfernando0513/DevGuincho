@@ -1,22 +1,15 @@
 import React from "react";
 import './BtnPrimary.css'
+import { Button } from "react-bootstrap";
 
-const PRIMARY = "primary";
-const SECONDARY = "secondary";
 
-function BtnPrimary({ btnText, disabled, loading, onClick, variant }) {
-
-    variant = variant === PRIMARY || variant === SECONDARY ? variant : PRIMARY;
-    const buttonText = loading ? 'Carregando...' : btnText;
-
+function BtnPrimary({ btnText }) {
     return (
-        <button
-            onClick={onClick} 
-            className={`btn ${variant}`}
-            disabled={disabled}>
-
-            {buttonText}
-        </button>
+        <div className="btn-section">
+            <button className="btn">
+                {btnText}
+            </button>
+        </div>
     );
 }
 
