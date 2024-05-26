@@ -5,7 +5,7 @@ import * as Icon from 'react-bootstrap-icons';
 import BtnPrimary from "../components/btn-primary/BtnPrimary.jsx";
 import InputGroup from 'react-bootstrap/InputGroup';
 import { IMaskInput } from "react-imask";
-// import CardComponent from '../components/card/CardComponent.jsx';
+import MainComponent from '../components/card/MainComponent/MainComponent.jsx'
 
 
 
@@ -54,6 +54,7 @@ function Home() {
                             </Card>
                         </CardGroup>
                     </div>
+
                     <div className="col-sm-4 ">
                         <CardGroup className="cardGroup">
                             <Card className="custom-card">
@@ -135,11 +136,13 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                {/* <div className="row">
-                    <div className="section-cards">
-                        <CardComponent />
+                <div className="row">
+                    <div className="cl-sm-2 sectionCardComment">
+                        <div className="cl-sm-12 cardComment">
+                            <MainComponent />
+                        </div>
                     </div>
-                </div> */}
+                </div>
             </div>
         </>
     )

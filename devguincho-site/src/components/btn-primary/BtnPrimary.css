@@ -8,7 +8,6 @@
 .btnText {
     border: none;
     border-radius: 30px;
-    cursor: pointer;
     padding: 20px 40px;
     color: var(--primaryText);
     background: -webkit-linear-gradient(180deg, var(--primaryColor), var(--secondaryColor));
@@ -18,10 +17,10 @@
     cursor: pointer;
     transition: 0.2s;
 
-    .btnText:hover {
-        transform: scale(1.1);
-    }
-  
+}
+
+.btnText:hover {
+    transform: scale(1.1);
 }
 
 

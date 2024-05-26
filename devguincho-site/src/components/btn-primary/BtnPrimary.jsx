@@ -6,7 +6,7 @@ import './BtnPrimary.css'
 function BtnPrimary({ btnText }) {
     return (
         <div className="btn-section">
-            <button className="btn">
+            <button className="btnText">
                 {btnText}
             </button>
         </div>

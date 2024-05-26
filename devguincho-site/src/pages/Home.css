@@ -262,6 +262,13 @@
             font-size: 18px;
             border: 0;
             border-radius: 26px;
+
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .btnOrcamento:hover{
+            transform: scale(1.1);
         }
     }
 
@@ -269,6 +276,19 @@
 
 .section-cards {
     height: 600px;
+}
+
+.sectionCardComments{
+    display: flex;
+    padding: 40px 4%;
+    justify-content: center;
+    
+}
+
+.cardComment{
+    display: flex;
+    padding: 40px 4%;
+    gap: 60px;
 }
 
 @media (max-width: 480px) {
