@@ -46,8 +46,8 @@ function Home() {
                             <Card className="custom-card">
                                 <Card.Body className="text-center">
                                     <Icon.Truck className="icon" color="var(--secondaryColor)" size={80} />
-                                    <Card.Title>RESGATE 24/7</Card.Title>
-                                    <Card.Text>
+                                    <Card.Title color="#black">RESGATE 24/7</Card.Title>
+                                    <Card.Text color="#black">
                                         Atendimento imediato para emergências na estrada. Ligue agora para uma solução rápida e eficiente.
                                     </Card.Text>
                                 </Card.Body>
@@ -60,8 +60,8 @@ function Home() {
                             <Card className="custom-card">
                                 <Card.Body className="text-center">
                                     <Icon.Telephone className="icon" color="var(--secondaryColor)" size={80} />
-                                    <Card.Title>Atendimento Rápido</Card.Title>
-                                    <Card.Text>
+                                    <Card.Title color="#black">Atendimento Rápido</Card.Title>
+                                    <Card.Text color="#black">
                                         Oferecemos soluções especializadas de forma rápida e eficaz para suas necessidades na estrada. Contate-nos para assistência imediata e profissional.
                                     </Card.Text>
                                 </Card.Body>
@@ -73,8 +73,8 @@ function Home() {
                             <Card className="custom-card">
                                 <Card.Body className="text-center">
                                     <Icon.Box className="iconBox" color="var(--secondaryColor)" size={80} />
-                                    <Card.Title>Cálculo Rápido de Frete</Card.Title>
-                                    <Card.Text>
+                                    <Card.Title color="#black">Cálculo Rápido de Frete</Card.Title>
+                                    <Card.Text color="#black">
                                         Obtenha rapidamente o custo do transporte para suas remessas. Simples e eficiente. aaa
                                     </Card.Text>
                                 </Card.Body>

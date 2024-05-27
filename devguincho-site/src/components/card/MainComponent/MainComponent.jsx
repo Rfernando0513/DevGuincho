@@ -38,12 +38,12 @@ const MainComponent = () => {
 
   return (
     <div className="carousel-container">
-      <ChangeCommentButton onClick={() => changeComment(-1)} icon={<Icon.CaretLeftFill size={50} />} />
+      <ChangeCommentButton onClick={() => changeComment(-1)} icon={<Icon.CaretLeftFill size={20}/>} />
       <div className={`carousel ${direction ? `carousel-${direction === 1 ? 'right' : 'left'}` : ''}`}>
         <CardComponent comment={currentComment1} />
         <CardComponent comment={currentComment2} />
       </div>
-      <ChangeCommentButton onClick={() => changeComment(1)} icon={<Icon.CaretRightFill size={50} />} />
+      <ChangeCommentButton onClick={() => changeComment(1)} icon={<Icon.CaretRightFill size={20}/>} />
     </div>
 
   );
