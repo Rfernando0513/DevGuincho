@@ -8,7 +8,7 @@ const Counter = ({ end }) => {
   useEffect(() => {
     let start = 0;
     const endInt = parseInt(end, 10); 
-    const duration = 2000; 
+    const duration = 2500; 
     const increment = endInt / (duration / 100);
 
     const handleScroll = () => {

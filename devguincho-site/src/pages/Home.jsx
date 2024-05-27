@@ -145,11 +145,13 @@ function Home() {
                             <MainComponent />
                         </div>
                         <Benefit
-                            title={"+ DE 100 CLIENTES"}
-                            subtitle={100}
+                            subTitle={"897"}
                             showCounter={true}
                         />
                     </div>
+                </div>
+                <div className="row">
+                    <RangeText  textRange={"↓ NOS ACOMPANHE NAS REDES SOCIAIS"}/>
                 </div>
             </div>
         </>

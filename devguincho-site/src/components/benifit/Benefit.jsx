@@ -7,7 +7,7 @@ const Benefit = ({title, subTitle, description, highLight, showCounter}) => {
         <div className="benefit-data">
             {showCounter ? <Counter end={subTitle}/> : <h3>{subTitle}</h3>}
             <h2>{title}</h2>
-            {description && <p>{description} <b>{highLight}</b></p>}
+            {<p>{description} <b>{highLight}</b></p>}
         </div>
     )
 }
