@@ -1,11 +1,12 @@
 import './Home.css';
-import { Button, Card, CardGroup, Form } from 'react-bootstrap'
+import { Button, Card, CardGroup, Form } from 'react-bootstrap';
 import RangeText from "../components/Range/RangeText.jsx";
 import * as Icon from 'react-bootstrap-icons';
 import BtnPrimary from "../components/btn-primary/BtnPrimary.jsx";
 import InputGroup from 'react-bootstrap/InputGroup';
 import { IMaskInput } from "react-imask";
-import MainComponent from '../components/card/MainComponent/MainComponent.jsx'
+import MainComponent from '../components/card/MainComponent/MainComponent.jsx';
+import Benefit from '../components/benifit/Benefit.jsx';
 
 
 
@@ -15,7 +16,7 @@ function Home() {
 
     return (
         <>
-            <div className="container">
+            <div className="home-container">
                 <div className="row col-sm-12">
                     <div className="topo-site">
                         <div className="text-topo">
@@ -46,8 +47,8 @@ function Home() {
                             <Card className="custom-card">
                                 <Card.Body className="text-center">
                                     <Icon.Truck className="icon" color="var(--secondaryColor)" size={80} />
-                                    <Card.Title color="#black">RESGATE 24/7</Card.Title>
-                                    <Card.Text color="#black">
+                                    <Card.Title >RESGATE 24/7</Card.Title>
+                                    <Card.Text >
                                         Atendimento imediato para emergências na estrada. Ligue agora para uma solução rápida e eficiente.
                                     </Card.Text>
                                 </Card.Body>
@@ -60,8 +61,8 @@ function Home() {
                             <Card className="custom-card">
                                 <Card.Body className="text-center">
                                     <Icon.Telephone className="icon" color="var(--secondaryColor)" size={80} />
-                                    <Card.Title color="#black">Atendimento Rápido</Card.Title>
-                                    <Card.Text color="#black">
+                                    <Card.Title >Atendimento Rápido</Card.Title>
+                                    <Card.Text >
                                         Oferecemos soluções especializadas de forma rápida e eficaz para suas necessidades na estrada. Contate-nos para assistência imediata e profissional.
                                     </Card.Text>
                                 </Card.Body>
@@ -73,8 +74,8 @@ function Home() {
                             <Card className="custom-card">
                                 <Card.Body className="text-center">
                                     <Icon.Box className="iconBox" color="var(--secondaryColor)" size={80} />
-                                    <Card.Title color="#black">Cálculo Rápido de Frete</Card.Title>
-                                    <Card.Text color="#black">
+                                    <Card.Title >Cálculo Rápido de Frete</Card.Title>
+                                    <Card.Text >
                                         Obtenha rapidamente o custo do transporte para suas remessas. Simples e eficiente. aaa
                                     </Card.Text>
                                 </Card.Body>
@@ -82,11 +83,13 @@ function Home() {
                         </CardGroup>
                     </div>
                 </div>
-                <div class="row benefit-section">
-                    <div class="benefit-data">
-                        <h2>95% das <br />
-                            empresas</h2>
-                    </div>
+                <div className="row benefit-section">
+                    <Benefit
+                        title={"95% das empresas"}
+                        description={"Não sabem lidar com problemas de"}
+                        highlight={"escalibilidade"}
+                        showCounter={false}
+                    />
                     <p>Não sabem lidar com problemas de <b>escalibilidade</b> <br /> e grande volume de requisição.</p>
                 </div>
             </div>
@@ -111,7 +114,7 @@ function Home() {
                                         as={IMaskInput}
                                         mask="00000-000"
                                         placeholder="ORIGEM:"
-                                        inputmode="numeric"
+                                        inputMode="numeric"
                                         style={{ color: 'white', fontSize: '22.5px' }}
                                         className='FormControlOrcamento'
                                     />
@@ -122,7 +125,7 @@ function Home() {
                                         as={IMaskInput}
                                         mask="00000-000"
                                         placeholder="DESTINO:"
-                                        inputmode="numeric"
+                                        inputMode="numeric"
                                         style={{ color: 'white', fontSize: '22.5px' }}
                                         className='FormControlOrcamento'
                                     />
@@ -137,10 +140,15 @@ function Home() {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="cl-sm-2 sectionCardComment">
+                    <div className="cl-sm-2 benefit-section">
                         <div className="cl-sm-12 cardComment">
                             <MainComponent />
                         </div>
+                        <Benefit
+                            title={"+ DE 100 CLIENTES"}
+                            subtitle={100}
+                            showCounter={true}
+                        />
                     </div>
                 </div>
             </div>

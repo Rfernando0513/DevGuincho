@@ -1,10 +1,5 @@
 @import '../css/variables.css';
 
-.container {
-    padding: 20px;
-}
-
-
 .topo-site {
     background-color: var(--primaryColor);
     height: 300px;
@@ -52,7 +47,7 @@
     border: 0;
     padding: 10px;
     border-radius: 50%;
-    top: 38%;
+    top: 49%;
     left: 15%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -132,12 +127,14 @@
                 font-size: 1.25rem;
                 font-weight: bold;
                 margin: 20px 0;
+                color: var(--darkColor);
             }
 
             .card-text {
                 margin-top: 5px;
                 font-size: 1rem;
                 text-align: center;
+                color: var(--darkColor);
             }
         }
     }
@@ -149,35 +146,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-
     gap: 70px;
-
-    .benefit-data {
-        border-bottom: 10px solid var(--primaryColor);
-        padding-bottom: 40px;
-
-        h2 {
-            font-size: 60px;
-            font-weight: 600;
-            font-family: "Roboto", sans-serif;
-            color: var(--darkColor);
-        }
-    }
-
-    p {
-        font-size: 40px;
-        font-style: italic;
-        font-weight: 300;
-
-        b {
-            background: -webkit-linear-gradient(180deg, var(--primaryColor), var(--secondaryColor));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-style: normal;
-            background-clip: text;
-        }
-    }
 }
 
 .cta-section {
@@ -279,16 +248,16 @@
 }
 
 .sectionCardComments{
+    padding: 0 4%;
     display: flex;
-    padding: 40px 4%;
-    justify-content: center;
-    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
 }
 
 .cardComment{
     display: flex;
     padding: 40px 4%;
-    gap: 60px;
 }
 
 @media (max-width: 480px) {

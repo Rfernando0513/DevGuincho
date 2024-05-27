@@ -1,0 +1,35 @@
+@import '../../css/variables.css';
+
+.benefit-data {
+    border-bottom: 10px solid var(--primaryColor);
+    padding-bottom: 10px;
+    
+
+    h2 {
+        font-size: 60px;
+        font-weight: 600;
+        font-family: "Roboto", sans-serif;
+        color: var(--darkColor);
+    }
+
+    h3{
+        font-size: 45px;
+        font-family: "Romantic", sans-serif;
+        font-weight: bold;
+        color: var(--darkColor);
+    }
+
+    p {
+        font-size: 40px;
+        font-style: italic;
+        font-weight: 300;
+    
+        b {
+            background: -webkit-linear-gradient(180deg, var(--primaryColor), var(--secondaryColor));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-style: normal;
+            background-clip: text;
+        }
+    }
+}

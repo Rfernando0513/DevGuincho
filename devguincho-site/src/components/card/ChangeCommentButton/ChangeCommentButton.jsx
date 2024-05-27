@@ -1,10 +1,12 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
+import './ChangeCommentButton.css';
+
+
 
 const ChangeCommentButton = ({ onClick, icon }) => (
-  <Button variant="primary" onClick={onClick}>
-    <i className={icon}></i>
-  </Button>
+  <button className="changeCommentButton" onClick={onClick}>
+    {icon}
+  </button>
 );
 
 export default ChangeCommentButton;

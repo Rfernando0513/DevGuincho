@@ -28,7 +28,7 @@ const MainComponent = () => {
         return [newIndex1, newIndex2];
       });
       setDirection(null);
-    }, 500); // tempo da animação em milissegundos
+    }, 500); 
   };
 
   if (comments.length === 0) return <div>Loading...</div>;
@@ -38,16 +38,14 @@ const MainComponent = () => {
 
   return (
     <div className="carousel-container">
-      <ChangeCommentButton onClick={() => changeComment(-1)} icon={<Icon.CaretLeftFill size={20}/>} />
+      <ChangeCommentButton onClick={() => changeComment(-1)} icon={<Icon.ChevronLeft size={50} />} />
       <div className={`carousel ${direction ? `carousel-${direction === 1 ? 'right' : 'left'}` : ''}`}>
         <CardComponent comment={currentComment1} />
         <CardComponent comment={currentComment2} />
       </div>
-      <ChangeCommentButton onClick={() => changeComment(1)} icon={<Icon.CaretRightFill size={20}/>} />
+      <ChangeCommentButton onClick={() => changeComment(1)} icon={<Icon.ChevronRight size={50} />} />
     </div>
-
   );
 };
-
 
 export default MainComponent;
