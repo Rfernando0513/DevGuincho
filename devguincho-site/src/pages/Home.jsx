@@ -7,7 +7,7 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import { IMaskInput } from "react-imask";
 import MainComponent from '../components/card/MainComponent/MainComponent.jsx';
 import Benefit from '../components/benifit/Benefit.jsx';
-
+import Rodape from '../components/footer/Rodape.jsx'
 
 
 function Home() {
@@ -151,7 +151,10 @@ function Home() {
                     </div>
                 </div>
                 <div className="row">
-                    <RangeText  textRange={"↓ NOS ACOMPANHE NAS REDES SOCIAIS"}/>
+                    <RangeText textRange={"↓ NOS ACOMPANHE NAS REDES SOCIAIS"} />
+                </div>
+                <div className="row">
+                    <Rodape className="m-0"/>
                 </div>
             </div>
         </>
