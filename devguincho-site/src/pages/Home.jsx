@@ -3,11 +3,14 @@ import { Button, Card, CardGroup, Form } from 'react-bootstrap';
 import RangeText from "../components/Range/RangeText.jsx";
 import * as Icon from 'react-bootstrap-icons';
 import BtnPrimary from "../components/btn-primary/BtnPrimary.jsx";
+import BtnOrcamento from "../components/btnOrcamento/BtnOrcamento.jsx"
 import InputGroup from 'react-bootstrap/InputGroup';
 import { IMaskInput } from "react-imask";
 import MainComponent from '../components/card/MainComponent/MainComponent.jsx';
 import Benefit from '../components/benifit/Benefit.jsx';
-import Rodape from '../components/footer/Rodape.jsx'
+import Rodape from '../components/footer/Rodape.jsx';
+import { Link} from 'react-scroll';
+
 
 
 function Home() {
@@ -18,11 +21,20 @@ function Home() {
         <>
             <div className="home-container">
                 <div className="row col-sm-12">
-                    <div className="topo-site">
+                    <div className="topo-site" id='topoSite'>
                         <div className="text-topo">
                             <h1>DEV GUINCHO</h1>
                             <p>Tecnologia em movimento</p>
-                            <Button variant="light">FAÇA UM ORÇAMENTO</Button>
+                            <Link 
+                                activeClass="active"
+                                to='orcamento'
+                                spy={true}
+                                smooth={true}
+                                offset={-90}
+                                duration={900}
+                            >
+                                <Button variant="light">FAÇA UM ORÇAMENTO</Button>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -103,7 +115,7 @@ function Home() {
                     <div className="cl-sm-12 robo">
                         <img className='roboImg' src="img/robo.png" alt="robo" />
                     </div>
-                    <div className="cl-sm-6 form">
+                    <div id='orcamento' className="cl-sm-6 form">
                         <h1>ORÇAMENTO RAPIDO</h1>
                         <p>Calcule seu frete e leve seus sonhos ainda mais longe!<br /> Preencha os campos abaixo com os cep e descubra como<br /> podemos tornar sua experiência ainda mais especial.</p>
 
@@ -111,6 +123,7 @@ function Home() {
                             <div>
                                 <InputGroup className="mb-3 formOrcamento">
                                     <Form.Control
+                                        id="origem"
                                         as={IMaskInput}
                                         mask="00000-000"
                                         placeholder="ORIGEM:"
@@ -121,7 +134,8 @@ function Home() {
                                 </InputGroup>
 
                                 <InputGroup className="mb-3 formOrcamento">
-                                    <Form.Control
+                                    <Form.Control 
+                                        id="destino"
                                         as={IMaskInput}
                                         mask="00000-000"
                                         placeholder="DESTINO:"
@@ -130,11 +144,11 @@ function Home() {
                                         className='FormControlOrcamento'
                                     />
                                 </InputGroup>
-                                <div className="btnSession">
-                                    <button className='btnOrcamento'>
-                                        Calcular
-                                    </button>
-                                </div>
+
+                                <BtnOrcamento
+                                 orcamentoText='CALCULAR'
+                                />
+                                
                             </div>
                         </div>
                     </div>
@@ -154,7 +168,7 @@ function Home() {
                     <RangeText textRange={"↓ NOS ACOMPANHE NAS REDES SOCIAIS"} />
                 </div>
                 <div className="row">
-                    <Rodape className="m-0"/>
+                    <Rodape className="m-0" />
                 </div>
             </div>
         </>
