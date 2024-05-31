@@ -3,7 +3,12 @@
 .benefit-data {
     border-bottom: 10px solid var(--primaryColor);
     padding-bottom: 10px;
-    
+    padding: 0 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 
     h2 {
         font-size: 60px;
@@ -12,18 +17,22 @@
         color: var(--darkColor);
     }
 
-    h3{
+    h3 {
         font-size: 45px;
         font-family: "Romantic", sans-serif;
         font-weight: bold;
         color: var(--darkColor);
+        margin-bottom: -35px;
     }
 
+}
+
+.description {
     p {
         font-size: 40px;
         font-style: italic;
         font-weight: 300;
-    
+
         b {
             background: -webkit-linear-gradient(180deg, var(--primaryColor), var(--secondaryColor));
             -webkit-background-clip: text;
@@ -32,4 +41,21 @@
             background-clip: text;
         }
     }
+}
+
+@media (min-width: 1080px) {
+
+    .benefit-section {
+        flex-direction: row;
+    }
+}
+
+
+@media screen and (max-width: 1080px) {
+
+    .benefit-data h2 {
+        padding: 0 4%;
+        text-align: center;
+    }
+
 }

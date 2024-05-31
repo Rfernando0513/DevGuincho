@@ -1,22 +1,28 @@
 import React from "react";
 import "./BtnOrcamento.css";
 
-function BtnOrcamento ({orcamentoText}) {
+function BtnOrcamento ({orcamentoText, formValues}) {
 
     const whatsappLink = () => {
-        const telephone = "11930701826";
-        const origem = document.getElementById('origem').value;
-        const destino = document.getElementById('destino').value;
+        const telephone = "+5511930701826";
+        const {origem, destino} = formValues;
+        
+        if(!origem || !destino) {
+            alert("Por Favor, preencha os campos em branco.");
+            return;
+        }
+
+        const message = `Olá, gostaria de fazer um orçamento. Origem: ${origem}. Destino: ${destino}.`;
+        const encodedMessage  = encodeURIComponent(message);
         let linkWpp = "";
 
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            linkWpp = `<a href="https://api.whatsapp.com/send?phone=${telephone}&text=Olá, gostaria de fazer um orçamento. Origem: ${origem}. Destino: ${destino}"></a>`;
-            
+            linkWpp = `https://api.whatsapp.com/send?phone=${telephone}&text=${encodedMessage}`;
         } else {
-            linkWpp = `<a href="https://web.whatsapp.com/send?phone=${telephone}&text=Olá, gostaria de fazer um orçamento. Origem: ${origem}. Destino: ${destino}"></a>`;
+            linkWpp = `https://web.whatsapp.com/send?phone=${telephone}&text=${encodedMessage}`;
         }
 
-        return linkWpp;
+        window.open(linkWpp, "_blank");
     }
 
     return (

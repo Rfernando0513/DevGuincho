@@ -3,13 +3,11 @@ import { Button, Card, CardGroup, Form } from 'react-bootstrap';
 import RangeText from "../components/Range/RangeText.jsx";
 import * as Icon from 'react-bootstrap-icons';
 import BtnPrimary from "../components/btn-primary/BtnPrimary.jsx";
-import BtnOrcamento from "../components/btnOrcamento/BtnOrcamento.jsx"
-import InputGroup from 'react-bootstrap/InputGroup';
-import { IMaskInput } from "react-imask";
+import FormOrcamento from '../components/form/formOrcamento/FormOrcamento.jsx'
 import MainComponent from '../components/card/MainComponent/MainComponent.jsx';
 import Benefit from '../components/benifit/Benefit.jsx';
 import Rodape from '../components/footer/Rodape.jsx';
-import { Link} from 'react-scroll';
+import { Link } from 'react-scroll';
 
 
 
@@ -25,7 +23,7 @@ function Home() {
                         <div className="text-topo">
                             <h1>DEV GUINCHO</h1>
                             <p>Tecnologia em movimento</p>
-                            <Link 
+                            <Link
                                 activeClass="active"
                                 to='orcamento'
                                 spy={true}
@@ -97,12 +95,12 @@ function Home() {
                 </div>
                 <div className="row benefit-section">
                     <Benefit
-                        title={"95% das empresas"}
-                        description={"Não sabem lidar com problemas de"}
+                        title={'95% das <br/> pessoas'}
                         highlight={"escalibilidade"}
                         showCounter={false}
+                        description={"Não sabem como requisitar um orçamento e enfrentam dificuldades, mas podemos te ajudar a resolver."}
+                        highLight={"orçamento"}
                     />
-                    <p>Não sabem lidar com problemas de <b>escalibilidade</b> <br /> e grande volume de requisição.</p>
                 </div>
             </div>
             <div className="row cta-section">
@@ -116,41 +114,7 @@ function Home() {
                         <img className='roboImg' src="img/robo.png" alt="robo" />
                     </div>
                     <div id='orcamento' className="cl-sm-6 form">
-                        <h1>ORÇAMENTO RAPIDO</h1>
-                        <p>Calcule seu frete e leve seus sonhos ainda mais longe!<br /> Preencha os campos abaixo com os cep e descubra como<br /> podemos tornar sua experiência ainda mais especial.</p>
-
-                        <div className="formGroup">
-                            <div>
-                                <InputGroup className="mb-3 formOrcamento">
-                                    <Form.Control
-                                        id="origem"
-                                        as={IMaskInput}
-                                        mask="00000-000"
-                                        placeholder="ORIGEM:"
-                                        inputMode="numeric"
-                                        style={{ color: 'white', fontSize: '22.5px' }}
-                                        className='FormControlOrcamento'
-                                    />
-                                </InputGroup>
-
-                                <InputGroup className="mb-3 formOrcamento">
-                                    <Form.Control 
-                                        id="destino"
-                                        as={IMaskInput}
-                                        mask="00000-000"
-                                        placeholder="DESTINO:"
-                                        inputMode="numeric"
-                                        style={{ color: 'white', fontSize: '22.5px' }}
-                                        className='FormControlOrcamento'
-                                    />
-                                </InputGroup>
-
-                                <BtnOrcamento
-                                 orcamentoText='CALCULAR'
-                                />
-                                
-                            </div>
-                        </div>
+                        <FormOrcamento />
                     </div>
                 </div>
                 <div className="row">
@@ -159,7 +123,7 @@ function Home() {
                             <MainComponent />
                         </div>
                         <Benefit
-                            subTitle={"897"}
+                            subTitle={"7589"}
                             showCounter={true}
                         />
                     </div>

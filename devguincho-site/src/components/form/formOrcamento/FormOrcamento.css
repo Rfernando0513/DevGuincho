@@ -1,0 +1,45 @@
+@import "../../../css/variables.css";
+
+.formGroup {
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    color: var(--lightColor);
+
+
+    h1 {
+        text-align: center;
+        margin: 40px;
+    }
+
+    p {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .formOrcamento {
+        align-items: center;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 5px;
+
+        .FormControlOrcamento {
+            padding: 10px 4%;
+            background-color: var(--fourthColor);
+            border-radius: 30px;
+            height: 59px;
+            width: 371px;
+        }
+    }
+
+    /* .formOrcamento input::placeholder {
+        color: white;
+        font-size: 22.5px;
+        text-align: start;
+    }
+
+     */
+
+}
