@@ -3,7 +3,8 @@
 .benefit-data {
     border-bottom: 10px solid var(--primaryColor);
     padding-bottom: 10px;
-    padding: 0 4%;
+    padding: 20px 4%;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,7 +23,6 @@
         font-family: "Romantic", sans-serif;
         font-weight: bold;
         color: var(--darkColor);
-        margin-bottom: -35px;
     }
 
 }
@@ -43,6 +43,14 @@
     }
 }
 
+@media (max-width: 740px){
+    .benefit-data{
+        margin-top: -20px;
+        padding-bottom: 5px;
+       
+    }
+}
+
 @media (min-width: 1080px) {
 
     .benefit-section {
@@ -55,6 +63,7 @@
 
     .benefit-data h2 {
         padding: 0 4%;
+        padding-top: 10px;
         text-align: center;
     }
 
