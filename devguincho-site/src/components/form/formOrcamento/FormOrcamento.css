@@ -3,6 +3,10 @@
 .formGroup {
     display: flex;
     justify-content: center;
+
+    p{
+        padding: 0 2%;
+    }
 }
 
 .form {
@@ -33,13 +37,28 @@
             width: 371px;
         }
     }
+}
 
-    /* .formOrcamento input::placeholder {
-        color: white;
-        font-size: 22.5px;
-        text-align: start;
+@media screen and (max-width: 1080px) {
+    .formGroup{
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
     }
 
-     */
+    .form{
+        h1 {
+            margin: 0;
+            margin-top: -150px;
+        }
 
+        p{
+            padding: 20px 2%;
+        }
+    }
+
+    .form-input{
+        width: 100%;
+        max-width: 200px;
+    }
 }

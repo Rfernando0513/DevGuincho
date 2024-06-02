@@ -3,7 +3,7 @@
 .benefit-data {
     border-bottom: 10px solid var(--primaryColor);
     padding-bottom: 10px;
-    padding: 20px 4%;
+    padding: 10px 4%;
     margin-top: 40px;
     display: flex;
     flex-direction: column;
@@ -12,7 +12,7 @@
 
 
     h2 {
-        font-size: 60px;
+        font-size: 45px;
         font-weight: 600;
         font-family: "Roboto", sans-serif;
         color: var(--darkColor);
@@ -28,10 +28,12 @@
 }
 
 .description {
+    padding: 10px 4%;
     p {
         font-size: 40px;
         font-style: italic;
         font-weight: 300;
+        padding: 0 4%;
 
         b {
             background: -webkit-linear-gradient(180deg, var(--primaryColor), var(--secondaryColor));

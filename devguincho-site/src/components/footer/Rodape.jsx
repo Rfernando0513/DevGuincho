@@ -38,7 +38,7 @@ const Rodape = () => {
                     <div className="line-footer borda">
                         <p>
                             <Icon.EnvelopeFill color="#fff" size={22}/>
-                            <a href="#">sejam@outlook.com</a>
+                            <a href="#">devguincho@outlook.com</a>
                         </p>
                     </div>
                 </div>

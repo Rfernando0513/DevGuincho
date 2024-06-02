@@ -1,27 +1,27 @@
 @import '../../../css/variables.css';
 
 .cardComponent {
-    background-color: var(--thirdColor);
-    width: 306px;
-    height: 432px;
-    padding-top: 40px;
-    border: 0;
-    border-radius: 47px;
-    text-align: center;
-    align-items: center;
-    position: relative;
-    box-shadow: 35px 25px rgba(44, 62, 80, 0.5);
-    margin-left: 15px;
+  background-color: var(--thirdColor);
+  width: 306px;
+  height: 432px;
+  padding-top: 40px;
+  border: 0;
+  border-radius: 47px;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 35px 25px rgba(44, 62, 80, 0.5);
+  margin-left: 15px;
 }
 
 .card-title {
-    font-size: 25px;
-    font-weight: bold;
-    color: #ffffff;
-  }
-  
-  .card-text {
-    font-size: 25px;
-    font-weight: 'Regular';
-    color: #ffffff;
-  }
+  font-size: 25px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.card-text {
+  font-size: 25px;
+  font-weight: 'Regular';
+  color: #ffffff;
+}

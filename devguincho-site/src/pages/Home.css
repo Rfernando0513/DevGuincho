@@ -159,6 +159,7 @@
     height: 500px;
     background-color: var(--thirdColor);
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20%;
 
@@ -178,7 +179,7 @@
     padding: 0 4%;
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
 }
 
 @media (max-width: 480px) {
@@ -208,6 +209,26 @@
     .benefit-data h2 {
         padding: 0 4%;
         text-align: center;
+    }
+
+    .form-section{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+
+        height: 700px;
+    }
+
+    .robo {
+        
+        .roboImg {
+            height: 200px;
+            width: 200px;
+        }
+    }
+
+    .sectionCardComments{
+        flex-direction: column;
     }
 
 }
