@@ -49,16 +49,13 @@
 
 @media (min-width: 0px) and (max-width: 450px) {
     .benefit-data {
-
-        padding-bottom: 5px;
-
         h2{
-            margin-top: 150px;  
+            margin-top: 20vh;  
         }
 
         h3 {
-            margin-top: 50px;
-      
+            margin-top: 0;
+            padding: 0;
         }
 
         .description p{

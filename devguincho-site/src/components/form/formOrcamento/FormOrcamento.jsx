@@ -21,41 +21,35 @@ function FormOrcamento() {
                         Calcule seu frete e leve seus sonhos ainda mais longe!<br /> Preencha os campos abaixo com os cep e descubra como<br /> podemos tornar sua experiência ainda mais especial.
                     </p>
 
-                <InputGroup className="mb-3 formOrcamento">
                     <Form.Control
                         id="origem"
                         as={IMaskInput}
                         mask="00000-000"
                         placeholder="ORIGEM:"
                         inputMode="numeric"
-                        style={{ color: 'white', fontSize: '22.5px', marginLeft: '40px' }}
-                        className='FormControlOrcamento'
+                        className="form-control formControlOrcamento"
                         value={formValues.origem}
                         onChange={handleChange}
                     />
-                </InputGroup>
-
-                <InputGroup className="mb-3 formOrcamento">
                     <Form.Control
                         id="destino"
                         as={IMaskInput}
                         mask="00000-000"
                         placeholder="DESTINO:"
                         inputMode="numeric"
-                        style={{ color: 'white', fontSize: '22.5px', marginLeft: '40px' }}
-                        className='FormControlOrcamento'
+                        className="form-control formControlOrcamento"
                         value={formValues.destino}
                         onChange={handleChange}
                     />
-                </InputGroup>
 
-            </Form>
 
-            <BtnOrcamento
-                orcamentoText='CALCULAR'
-                formValues={formValues}
-            />
-        </div>
+                </Form>
+
+                <BtnOrcamento
+                    orcamentoText='CALCULAR'
+                    formValues={formValues}
+                />
+            </div>
         </div >
     );
 }
