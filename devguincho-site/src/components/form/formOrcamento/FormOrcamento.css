@@ -41,6 +41,37 @@
     }
 }
 
+@media screen and (max-width: 767px){
+    .form{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 4%;
+
+        p{
+            font-size: 18px;
+            padding: 10px 4%;
+        }
+    }
+
+    .description {
+        padding: 10px 4%;
+        p {
+            font-size: 40px;
+            font-style: italic;
+            font-weight: 300;
+            padding: 0 4%;
+    
+            b {
+                background: -webkit-linear-gradient(180deg, var(--primaryColor), var(--secondaryColor));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-style: normal;
+                background-clip: text;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 1080px) {
     .formGroup{
         margin: 0 auto;

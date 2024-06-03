@@ -51,7 +51,8 @@
   transform: translateX(50%);
 }
 
-@media(width <= 900px){
+@media(min-width: 0px) and (max-width: 450px){
+
   .carousel{
     width: 100%;
     flex-direction: column;

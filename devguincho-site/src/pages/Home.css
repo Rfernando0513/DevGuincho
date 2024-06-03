@@ -18,6 +18,7 @@
         }
 
         p {
+            margin-top: -30px;
             margin-bottom: 25px;
             font-size: 1.25rem;
             font-weight: bolder;
@@ -73,7 +74,8 @@
         margin-top: 25px;
         padding-bottom: 10px;
         z-index: 2;
-        width: 400px;
+        max-width: 400px;
+        width: 100%;
     }
 
     hr {
@@ -143,7 +145,7 @@
 .benefit-section {
     padding: 60px 4%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 70px;
@@ -156,7 +158,7 @@
 }
 
 .form-section {
-    height: 500px;
+    height: 550px;
     background-color: var(--thirdColor);
     display: flex;
     flex-wrap: wrap;
@@ -175,43 +177,45 @@
     }
 }
 
-.sectionCardComments{
+.sectionCardComments {
     padding: 0 4%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-@media (width <= 480px) {
-    .logo {
-        top: 40%;
-    }
 
-    .imgLogo {
-        height: 14vw;
-        width: 14vw;
-        max-height: 50px;
-        max-width: 50px;
+@media screen and (max-width: 1080px) {
+
+    .sessionCard {
+        gap: 90px;
+        margin-top: 40px;
+        margin-bottom: -150px;
+    
+        .cardGroup {
+            
+
+            .custom-card {
+                margin: 0;
+            }
+        }
     }
     
-}
 
-@media (width <= 1080px) {
-
-    .benefit-section {
-        flex-direction: column;
+    .logo {
+        top: 23%;
     }
 
-}
-
-@media (width <= 1080px) {
+    .benefit-section{
+        flex-direction: column;
+    }
 
     .benefit-data h2 {
         padding: 0 4%;
         text-align: center;
     }
 
-    .form-section{
+    .form-section {
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: center;
@@ -220,17 +224,50 @@
     }
 
     .robo {
-        
+
         .roboImg {
             height: 200px;
             width: 200px;
         }
     }
 
-    .sectionCardComments{
+    .sectionCardComments {
         flex-direction: column;
     }
-
-
 }
 
+@media screen and (max-width: 767px) {
+    .text-topo {
+        padding: 0 4%;
+        margin-top: -60px;
+
+        p {
+            margin-top: -40px;
+            font-size: 1.25rem;
+            font-weight: bolder;
+        }
+    }
+
+    .title {
+        padding: 0 4%;
+
+        h1 {
+            padding-bottom: 10;
+            font-size: 1.7rem;
+        }
+
+        hr { margin-top: 1px; }
+    }
+
+    .logo { display: none; }
+
+    .sessionCard { gap: 50px; }
+
+    .benefit-section {
+        padding: 0 4%;
+        gap: 30px;
+    }
+
+    .robo { margin-top: 40px;}
+
+}

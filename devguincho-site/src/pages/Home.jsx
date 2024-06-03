@@ -126,6 +126,7 @@ function Home() {
                             subTitle={"7589"}
                             showCounter={true}
                         />
+                         
                     </div>
                 </div>
                 <div className="row">

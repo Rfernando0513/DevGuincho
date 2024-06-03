@@ -3,8 +3,7 @@
 .benefit-data {
     border-bottom: 10px solid var(--primaryColor);
     padding-bottom: 10px;
-    padding: 10px 4%;
-    margin-top: 40px;
+    padding: 0 4%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,6 +15,7 @@
         font-weight: 600;
         font-family: "Roboto", sans-serif;
         color: var(--darkColor);
+        margin-top: -90px;
     }
 
     h3 {
@@ -23,12 +23,14 @@
         font-family: "Romantic", sans-serif;
         font-weight: bold;
         color: var(--darkColor);
+        padding-bottom: 40px;
     }
 
 }
 
 .description {
-    padding: 10px 4%;
+    padding: 0 4%;
+
     p {
         font-size: 40px;
         font-style: italic;
@@ -45,38 +47,55 @@
     }
 }
 
-@media (max-width: 740px){
-    .benefit-data{
-        margin-top: -20px;
+@media (min-width: 0px) and (max-width: 450px) {
+    .benefit-data {
+
         padding-bottom: 5px;
 
-        h3{
-            margin-top: 50px;
+        h2{
+            margin-top: 150px;  
         }
-       
+
+        h3 {
+            margin-top: 50px;
+      
+        }
+
+        .description p{
+            font-size: 15px;
+        }
+
     }
 }
 
-@media (min-width: 1080px) {
 
 
-    .benefit-section {
-        flex-direction: row;
-    }
-}
+@media (min-width: 770px) and (max-width: 1024px){
 
-
-@media screen and (max-width: 1080px) {
-
-    .benefit-data h2 {
-        padding: 0 4%;
-        padding-top: 10px;
+    .benefit-data {
+        height: 200px;
+        margin-top: 150px;
         text-align: center;
+        align-items: center;
+
+        h2 {
+            padding: 0 4%;
+            font-size: 4rem;
+
+        }
     }
 
-    .benefit-data h3{
-        padding: 30px 4%;
+    .benefit-data h3 {
+        padding: 0 4%;
         font-size: 2.4rem;
     }
 
+    .description{
+        
+        p{
+            font-size: 4rem;
+        }
+    }
+
 }
+

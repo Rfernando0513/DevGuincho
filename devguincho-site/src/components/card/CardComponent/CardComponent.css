@@ -9,17 +9,36 @@
   border: 0;
   border-radius: 47px;
   text-align: center;
-  align-items: center;
   position: relative;
   box-shadow: 35px 25px rgba(44, 62, 80, 0.5);
 }
 
-@media (width <= 768px) {
+@media (min-width: 0px) and (max-width: 450px) {
   .cardComponent {
-    height: auto;
+    width: 100%; 
+    max-width: none;
+    height: auto; 
+    margin-bottom: 20px;
   }
 
   .card-title, .card-text {
     font-size: 20px;
+  }
+}
+
+@media (min-width: 770px) and (max-width: 1024px) {
+  .cardComponent {
+    width: 600px; 
+    height: 400px;
+    padding-top: 90px;
+    padding-bottom: 0px;
+
+    .card-title{
+      font-size: 39px;
+    }
+
+    .card-text{
+      font-size: 25px;
+    }
   }
 }
