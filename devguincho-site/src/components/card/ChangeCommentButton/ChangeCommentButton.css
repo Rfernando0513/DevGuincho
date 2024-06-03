@@ -1,5 +1,3 @@
-@import '../../../css/variables.css';
-
 .changeCommentButton {
     background: none;
     border: none;
@@ -8,6 +6,12 @@
     align-items: center;
     justify-content: center;
     color: var(--primaryColor);
-
     padding: 40px 20px;
-}
+  }
+  
+  @media (width <= 768px) {
+    .changeCommentButton {
+      padding: 20px 10px;
+    }
+  }
+  

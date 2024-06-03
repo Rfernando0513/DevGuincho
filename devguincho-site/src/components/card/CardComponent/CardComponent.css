@@ -1,27 +1,25 @@
-@import '../../../css/variables.css';
-
 .cardComponent {
   background-color: var(--thirdColor);
-  width: 306px;
-  height: 432px;
+  color: #ffffff;
+  width: 100%;
+  max-width: 306px; 
+  height: 50vh; 
   padding-top: 40px;
+  padding-bottom: 20px;
   border: 0;
   border-radius: 47px;
   text-align: center;
   align-items: center;
   position: relative;
   box-shadow: 35px 25px rgba(44, 62, 80, 0.5);
-  margin-left: 15px;
 }
 
-.card-title {
-  font-size: 25px;
-  font-weight: bold;
-  color: #ffffff;
-}
+@media (width <= 768px) {
+  .cardComponent {
+    height: auto;
+  }
 
-.card-text {
-  font-size: 25px;
-  font-weight: 'Regular';
-  color: #ffffff;
+  .card-title, .card-text {
+    font-size: 20px;
+  }
 }

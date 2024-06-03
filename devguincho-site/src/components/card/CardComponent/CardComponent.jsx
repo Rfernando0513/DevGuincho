@@ -6,7 +6,7 @@ const CardComponent = ({ comment }) => {
   if (!comment) return <div>Loading...</div>;
 
   return (
-    <div className="col-sm-4">
+    <div className="col-sm-4 .cardComment">
       <CardGroup className="cardComponent">
         <BootstrapCard>
           <BootstrapCard.Body className="text-center">

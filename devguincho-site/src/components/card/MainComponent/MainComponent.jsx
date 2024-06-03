@@ -38,12 +38,12 @@ const MainComponent = () => {
 
   return (
     <div className="carousel-container">
-      <ChangeCommentButton onClick={() => changeComment(1)} icon={<Icon.ChevronLeft size={50} />} />
+      <ChangeCommentButton onClick={() => changeComment(-1)} icon={<Icon.ChevronLeft size={50} />} />
       <div className={`carousel ${direction ? `carousel-${direction === 1 ? 'right' : 'left'}` : ''}`}>
         <CardComponent comment={currentComment1} />
         <CardComponent comment={currentComment2} />
       </div>
-      <ChangeCommentButton onClick={() => changeComment(-1)} icon={<Icon.ChevronRight size={50} style={{ marginLeft: '30px' }}/>} />
+      <ChangeCommentButton onClick={() => changeComment(1)} icon={<Icon.ChevronRight size={50} style={{ marginLeft: '30px' }}/>} />
     </div>
   );
 };
