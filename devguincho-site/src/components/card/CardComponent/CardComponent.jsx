@@ -10,7 +10,7 @@ const CardComponent = ({ comment }) => {
       <CardGroup className="cardComponent">
         <BootstrapCard>
           <BootstrapCard.Body className="text-center">
-            <img src={comment.photo} alt={comment.name} className="img-fluid mb-3" height={137} width={137} />
+            <img src={comment.photo} alt={comment.name} className=" logoCard" height={137} width={137} />
             <BootstrapCard.Title className="card-title">{comment.name}</BootstrapCard.Title>
             <BootstrapCard.Text className="card-text">{comment.text}</BootstrapCard.Text>
             <div className="rating">

@@ -1,7 +1,7 @@
 .cardComponent {
   background-color: var(--thirdColor);
   color: #ffffff;
-  width: 100%;
+  width: 290px;
   max-width: 306px; 
   height: 50vh; 
   padding-top: 40px;
@@ -11,6 +11,11 @@
   text-align: center;
   position: relative;
   box-shadow: 35px 25px rgba(44, 62, 80, 0.5);
+}
+
+.logoCard{
+  border-radius: 50%;
+  border: solid 5px #ffffff7a;
 }
 
 @media (min-width: 0px) and (max-width: 450px) {

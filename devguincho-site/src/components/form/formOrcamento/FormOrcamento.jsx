@@ -21,27 +21,28 @@ function FormOrcamento() {
                         Calcule seu frete e leve seus sonhos ainda mais longe!<br /> Preencha os campos abaixo com os cep e descubra como<br /> podemos tornar sua experiência ainda mais especial.
                     </p>
 
-                    <Form.Control
-                        id="origem"
-                        as={IMaskInput}
-                        mask="00000-000"
-                        placeholder="ORIGEM:"
-                        inputMode="numeric"
-                        className="form-control formControlOrcamento"
-                        value={formValues.origem}
-                        onChange={handleChange}
-                    />
-                    <Form.Control
-                        id="destino"
-                        as={IMaskInput}
-                        mask="00000-000"
-                        placeholder="DESTINO:"
-                        inputMode="numeric"
-                        className="form-control formControlOrcamento"
-                        value={formValues.destino}
-                        onChange={handleChange}
-                    />
-
+                    <p className="inputForm">
+                        <Form.Control
+                            id="origem"
+                            as={IMaskInput}
+                            mask="00000-000"
+                            placeholder="ORIGEM:"
+                            inputMode="numeric"
+                            className="form-control formControlOrcamento"
+                            value={formValues.origem}
+                            onChange={handleChange}
+                        />
+                        <Form.Control
+                            id="destino"
+                            as={IMaskInput}
+                            mask="00000-000"
+                            placeholder="DESTINO:"
+                            inputMode="numeric"
+                            className="form-control formControlOrcamento"
+                            value={formValues.destino}
+                            onChange={handleChange}
+                        />
+                    </p>
 
                 </Form>
 

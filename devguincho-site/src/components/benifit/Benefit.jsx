@@ -8,7 +8,7 @@ const Benefit = ({ title, subTitle, description, highLight, showCounter }) => {
     return (
         <>
             <div className="benefit-data">
-                {showCounter ? <Counter end={subTitle} /> : <h3>{subTitle}</h3>}
+                {showCounter ? <Counter end={subTitle} /> : <h3 id="subTitleCounter">{subTitle}</h3>}
                 <h2>
                     {titleParts.map((part, index) => (
                         <React.Fragment key={index}>

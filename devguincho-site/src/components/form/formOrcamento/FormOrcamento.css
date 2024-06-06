@@ -6,8 +6,13 @@
     align-items: center;
 
     p{
+        text-align: center;
         padding: 0 2%;
     }
+}
+
+.inputForm{
+    text-align: center;
 }
 
 .form {

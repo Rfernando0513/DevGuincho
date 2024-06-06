@@ -2,7 +2,6 @@
 
 .benefit-data {
     border-bottom: 10px solid var(--primaryColor);
-    padding-bottom: 10px;
     padding: 0 4%;
     display: flex;
     flex-direction: column;
@@ -10,16 +9,17 @@
     justify-content: center;
 
 
+
     h2 {
         font-size: 45px;
         font-weight: 600;
         font-family: "Roboto", sans-serif;
         color: var(--darkColor);
-        margin-top: -90px;
+        margin-top: -40px;
     }
 
     h3 {
-        font-size: 45px;
+        font-size: 50px;
         font-family: "Romantic", sans-serif;
         font-weight: bold;
         color: var(--darkColor);
@@ -30,6 +30,7 @@
 
 .description {
     padding: 0 4%;
+
 
     p {
         font-size: 40px;
@@ -53,7 +54,7 @@
             margin-top: 20vh;  
         }
 
-        h3 {
+        #subTitleCounter {
             margin-top: 0;
             padding: 0;
         }
@@ -80,11 +81,6 @@
             font-size: 4rem;
 
         }
-    }
-
-    .benefit-data h3 {
-        padding: 0 4%;
-        font-size: 2.4rem;
     }
 
     .description{
