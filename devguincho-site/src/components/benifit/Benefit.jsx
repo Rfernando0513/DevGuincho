@@ -8,14 +8,14 @@ const Benefit = ({ title, subTitle, description, highLight, showCounter }) => {
     return (
         <>
             <div className="benefit-data">
-                {showCounter ? <Counter end={subTitle} /> : <h3 id="subTitleCounter">{subTitle}</h3>}
-                <h2>
+                {showCounter ? <Counter end={subTitle} /> : <h2 className="subTitleCounter">{subTitle}</h2>}
+                <h3>
                     {titleParts.map((part, index) => (
                         <React.Fragment key={index}>
                             {index === 0 ? part : <>{' '}{part}</>}
                         </React.Fragment>
                     ))}
-                </h2>
+                </h3>
             </div>
 
 

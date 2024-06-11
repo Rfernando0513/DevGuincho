@@ -1,1 +1,6 @@
 @import '../../css/variables.css';
+
+
+#counter h2{
+    margin-bottom: -40px !important;
+}

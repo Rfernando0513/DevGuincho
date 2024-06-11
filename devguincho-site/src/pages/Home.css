@@ -191,22 +191,22 @@
         gap: 90px;
         margin-top: 40px;
         margin-bottom: -150px;
-    
+
         .cardGroup {
-            
+
 
             .custom-card {
                 margin: 0;
             }
         }
     }
-    
+
 
     .logo {
         top: 23%;
     }
 
-    .benefit-section{
+    .benefit-section {
         flex-direction: column;
     }
 
@@ -236,7 +236,7 @@
     }
 }
 
-@media screen and (max-width: 767px) {
+@media (min-width: 0px) and (max-width: 450px) {
     .text-topo {
         padding: 0 4%;
         margin-top: -60px;
@@ -256,26 +256,49 @@
             font-size: 1.7rem;
         }
 
-        hr { margin-top: 1px; }
+        hr {
+            margin-top: 1px;
+        }
     }
 
-    .logo { display: none; }
+    .logo {
+        display: none;
+    }
 
-    .sessionCard { gap: 50px; }
+    .sessionCard {
+        gap: 50px;
+        margin-bottom: 40px;
+    }
 
     .benefit-section {
         padding: 0 4%;
         gap: 30px;
     }
 
-    .robo { margin-top: 40px;}
+    .form-section{
+        height: 900px;
+    }
+
+    .robo {
+        margin-top: 0;
+    }
 
 }
 
-@media (min-width: 769px)  and (max-width: 1920px) {
+@media (min-width: 600px) and (max-width: 800px) {
+
     .logo {
-       
-        top: 36%;
+        top: 23% !important;
+    }
+
+    .sessionCard {
+        margin-bottom: 0;
     }
 }
 
+@media (min-width: 1080px) and (max-width: 1500px){
+
+    .logo{
+        top: 51% !important;
+    }
+}

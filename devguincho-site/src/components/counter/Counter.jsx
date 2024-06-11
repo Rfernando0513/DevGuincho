@@ -35,7 +35,7 @@ const Counter = ({ end }) => {
   }, [end]);
 
   
-  return <h3 id="counter">+DE {count} CLIENTES ATENDIDOS</h3>;
+  return <h2 id="counter">+DE {count} CLIENTES ATENDIDOS</h2>;
 };
 
 export default Counter;

@@ -8,39 +8,23 @@
   padding: 0 4%;
 }
 
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 0 4%;
+}
+
 .carousel {
   display: flex;
-  width: 100%; 
+  width: 100%;
   justify-content: center;
   align-items: center;
   position: relative;
   transition: transform 0.5s ease-in-out;
   gap: 60px;
-  
-  .carousel-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto; 
-    padding: 0 4%;
-  }
-  
-  .carousel {
-    display: flex;
-    width: 100%; 
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    transition: transform 0.5s ease-in-out;
-    gap: 40px;
-  }
-  
-  @media (width <= 900px) {
-    .carousel {
-      flex-direction: column;
-    }
-  }
-  
+
 }
 
 .carousel-left {
@@ -51,12 +35,29 @@
   transform: translateX(50%);
 }
 
-@media(min-width: 0px) and (max-width: 450px){
+@media(min-width: 0px) and (max-width: 450px) {
 
-  .carousel{
+  .carousel {
     width: 100%;
     flex-direction: column;
     margin-top: 40px;
     padding: 40px 0;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .carousel-container {
+    height: 50vh;
+  }
+
+  .carousel {
+    gap: 40px;
+  }
+}
+
+@media (min-width: 1080px) and (max-width: 1500px) {
+  .carousel-container {
+    height: 80vh;
+    margin-left: 115px;
   }
 }

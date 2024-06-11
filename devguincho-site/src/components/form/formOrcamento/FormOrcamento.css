@@ -5,13 +5,13 @@
     justify-content: center;
     align-items: center;
 
-    p{
+    p {
         text-align: center;
         padding: 0 2%;
     }
 }
 
-.inputForm{
+.inputForm {
     text-align: center;
 }
 
@@ -53,17 +53,22 @@
         color: white;
         font-size: 22.5px;
         margin-top: 10px;
-        
+
     }
 }
 
-@media (min-width: 0px) and (max-width: 450px){
+@media (min-width: 0px) and (max-width: 450px) {
 
     .formOrcamento {
         .formControlOrcamento {
             max-width: 100%;
             font-size: 18px;
         }
+    }
+
+    .inputForm {
+        margin-left: 10px;
+        width: 85%;
     }
 }
 
@@ -87,8 +92,8 @@
 
     .formOrcamento {
         .formControlOrcamento {
-            max-width: 300px; /* Ajustar largura máxima para telas menores */
-            font-size: 20px; /* Ajustar tamanho da fonte para telas menores */
+            max-width: 300px;
+            font-size: 20px;
         }
     }
 }

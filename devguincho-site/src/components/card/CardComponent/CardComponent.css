@@ -2,8 +2,8 @@
   background-color: var(--thirdColor);
   color: #ffffff;
   width: 290px;
-  max-width: 306px; 
-  height: 50vh; 
+  max-width: 306px;
+  height: 62vh;
   padding-top: 40px;
   padding-bottom: 20px;
   border: 0;
@@ -13,36 +13,36 @@
   box-shadow: 35px 25px rgba(44, 62, 80, 0.5);
 }
 
-.logoCard{
+.logoCard {
   border-radius: 50%;
   border: solid 5px #ffffff7a;
 }
 
 @media (min-width: 0px) and (max-width: 450px) {
   .cardComponent {
-    width: 100%; 
-    max-width: none;
-    height: auto; 
+    width: 250px;
+    height: 400px;
     margin-bottom: 20px;
   }
 
-  .card-title, .card-text {
+  .card-title,
+  .card-text {
     font-size: 20px;
   }
 }
 
 @media (min-width: 770px) and (max-width: 1024px) {
   .cardComponent {
-    width: 600px; 
+    width: 600px;
     height: 400px;
     padding-top: 90px;
     padding-bottom: 0px;
 
-    .card-title{
+    .card-title {
       font-size: 39px;
     }
 
-    .card-text{
+    .card-text {
       font-size: 25px;
     }
   }

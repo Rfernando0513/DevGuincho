@@ -8,14 +8,19 @@
     align-items: center;
     justify-content: center;
 
+    height: 200px;
+    
+    text-align: center;
+    align-items: center;
+
 
 
     h2 {
         font-size: 45px;
         font-weight: 600;
         font-family: "Roboto", sans-serif;
-        color: var(--darkColor);
-        margin-top: -40px;
+        color: var(--darkColor); 
+        margin: 0 auto;
     }
 
     h3 {
@@ -23,14 +28,13 @@
         font-family: "Romantic", sans-serif;
         font-weight: bold;
         color: var(--darkColor);
-        padding-bottom: 40px;
+        margin: 0 auto;
     }
 
 }
 
 .description {
     padding: 0 4%;
-
 
     p {
         font-size: 40px;
@@ -50,14 +54,6 @@
 
 @media (min-width: 0px) and (max-width: 450px) {
     .benefit-data {
-        h2{
-            margin-top: 20vh;  
-        }
-
-        #subTitleCounter {
-            margin-top: 0;
-            padding: 0;
-        }
 
         .description p{
             font-size: 15px;
@@ -68,18 +64,13 @@
 
 
 
-@media (min-width: 770px) and (max-width: 1024px){
+@media (min-width: 600px) and (max-width: 1024px){
 
     .benefit-data {
-        height: 200px;
-        margin-top: 150px;
-        text-align: center;
-        align-items: center;
+        height: 250px;
 
         h2 {
-            padding: 0 4%;
             font-size: 4rem;
-
         }
     }
 
