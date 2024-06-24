@@ -21,7 +21,7 @@ function Home() {
                 <div className="row col-sm-12">
                     <div className="topo-site" id='topoSite'>
                         <div className="text-topo">
-                            <h1>DEV GUINCHO</h1>
+                            <h1>GUINCHO 79</h1>
                             <p>Tecnologia em movimento</p>
                             <Link
                                 activeClass="active"
