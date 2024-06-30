@@ -61,6 +61,31 @@ footer .logo-footer a{
     font-size: 40px;
 }
 
+
+.logo {
+    position: absolute;
+    background-color: var(--lightColor);
+    border: 0;
+    padding: 10px;
+    border-radius: 50%;
+    top: 30% !important;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+
+    .imgLogo {
+        border-radius: 50%;
+        height: 10vw;
+        width: 10vw;
+        max-height: 80px;
+        max-width: 80px;
+        z-index: 2;
+    }
+}
+
 @media  screen and (max-width: 1020px){
     .flex{
         flex-direction: column;

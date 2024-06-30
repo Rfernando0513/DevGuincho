@@ -83,7 +83,7 @@ function Home() {
                         <CardGroup className="cardGroup">
                             <Card className="custom-card">
                                 <Card.Body className="text-center">
-                                    <Icon.Box className="iconBox" color="var(--secondaryColor)" size={80} />
+                                    <Icon.RocketTakeoff className="iconBox" color="var(--secondaryColor)" size={80} />
                                     <Card.Title >Cálculo Rápido de Frete</Card.Title>
                                     <Card.Text >
                                         Obtenha rapidamente o custo do transporte para suas remessas. Simples e eficiente. aaa

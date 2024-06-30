@@ -85,6 +85,7 @@
     z-index: 2;
 
     .imgLogo {
+        border-radius: 50%;
         height: 10vw;
         width: 10vw;
         max-height: 80px;

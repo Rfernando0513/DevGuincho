@@ -1,19 +1,24 @@
 import React from "react";
 import "./BtnOrcamento.css";
 
-function BtnOrcamento ({orcamentoText, formValues}) {
-
+function BtnOrcamento({ orcamentoText, formValues }) {
     const whatsappLink = () => {
-        const telephone = "+5511930701826";
-        const {origem, destino} = formValues;
-        
-        if(!origem || !destino) {
-            alert("Por Favor, preencha os campos em branco.");
+        const telephone = "+5511958209936";
+        const { origem, destino } = formValues;
+
+        if (!origem || !destino) {
+            alert("Por favor, preencha os campos em branco.");
             return;
         }
 
-        const message = `Olá, gostaria de fazer um orçamento. Origem: ${origem}. Destino: ${destino}.`;
-        const encodedMessage  = encodeURIComponent(message);
+        const message = `Olá Guincho 79, gostaria de obter um orçamento para um serviço de guincho. Aqui estão os detalhes:
+
+        - CEP de Origem: ${origem}
+        - CEP de Destino: ${destino}
+        
+        Obrigado pela atenção e aguardo sua resposta!`;
+
+        const encodedMessage = encodeURIComponent(message);
         let linkWpp = "";
 
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
@@ -23,7 +28,7 @@ function BtnOrcamento ({orcamentoText, formValues}) {
         }
 
         window.open(linkWpp, "_blank");
-    }
+    };
 
     return (
         <div className="btnSession">
@@ -31,7 +36,7 @@ function BtnOrcamento ({orcamentoText, formValues}) {
                 {orcamentoText}
             </button>
         </div>
-    )
+    );
 }
 
 export default BtnOrcamento;

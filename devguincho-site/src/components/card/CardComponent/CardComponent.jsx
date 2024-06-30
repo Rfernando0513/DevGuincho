@@ -11,7 +11,7 @@ const CardComponent = ({ comment }) => {
         <BootstrapCard>
           <BootstrapCard.Body className="text-center">
             <img src={comment.photo} alt={comment.name} className=" logoCard" height={137} width={137} />
-            <br />
+            <br /><br /><br />
             <BootstrapCard.Title className="card-title">{comment.name}</BootstrapCard.Title>
             <BootstrapCard.Text className="card-text">{comment.text}</BootstrapCard.Text>
             <div className="rating">
