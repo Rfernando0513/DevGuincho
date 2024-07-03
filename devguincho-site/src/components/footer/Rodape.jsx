@@ -34,6 +34,7 @@ const Rodape = () => {
                                 <a href="#">
                                     <button>
                                         <Icon.Instagram className="social-icons" size={25}/>
+                                        <a href="https://www.instagram.com/oguincho79?igsh=M2FlMmxlNnozM2xt"></a>
                                     </button>
                                 </a>
                                 <a href={linkWpp} target="_blank" rel="noopener noreferrer">
