@@ -112,7 +112,7 @@ function Home() {
                 <div className="form-section cl-sm-2">
                     <div className="cl-sm-12 robo">
                         <p> 
-                            <img className='roboImg' src="img/robo.png" alt="robo" />
+                            <img className='roboImg' src="img/roboDev.png" alt="robo" />
                         </p>
                     </div>
                     <div id='orcamento' className="cl-sm-6 form">
