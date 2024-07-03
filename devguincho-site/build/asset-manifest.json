@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c827f8db.css",
+    "main.js": "/static/js/main.7e8bab30.js",
+    "static/js/453.44fd55cd.chunk.js": "/static/js/453.44fd55cd.chunk.js",
+    "static/media/capturaGuincho.png": "/static/media/capturaGuincho.81986d240109f6525b68.png",
+    "index.html": "/index.html",
+    "main.c827f8db.css.map": "/static/css/main.c827f8db.css.map",
+    "main.7e8bab30.js.map": "/static/js/main.7e8bab30.js.map",
+    "453.44fd55cd.chunk.js.map": "/static/js/453.44fd55cd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c827f8db.css",
+    "static/js/main.7e8bab30.js"
+  ]
+}
