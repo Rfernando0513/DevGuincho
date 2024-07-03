@@ -217,7 +217,7 @@
 }
 
 
-@media (min-width: 0px) and (max-width: 455px) {
+@media (min-width: 0px) and (max-width: 450px) {
 
     .logo {
         display: none !important;
@@ -291,7 +291,7 @@
 @media (min-width: 1281px) and (max-width: 1275px) {
 
     .logo {
-        top: 51% !important;
+        top: 52% !important;
     }
 }
 
