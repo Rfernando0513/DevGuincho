@@ -26,15 +26,15 @@ const Rodape = () => {
                                 <a href="#">GUINCHO 79</a>
                             </div>
                             <div className="social-icons">
-                                <a href="#">
+                                <a href="tel:+55123456789">
                                     <button>
-                                        <Icon.Facebook className="social-icons" size={25}/>
+                                        <Icon.Telephone className="social-icons" size={25}/>
+                                        
                                     </button>
                                 </a>
-                                <a href="#">
+                                <a href="https://www.instagram.com/oguincho79?igsh=M2FlMmxlNnozM2xt">
                                     <button>
                                         <Icon.Instagram className="social-icons" size={25}/>
-                                        <a href="https://www.instagram.com/oguincho79?igsh=M2FlMmxlNnozM2xt"></a>
                                     </button>
                                 </a>
                                 <a href={linkWpp} target="_blank" rel="noopener noreferrer">
