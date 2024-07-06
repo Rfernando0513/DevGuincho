@@ -2,7 +2,6 @@ import React from "react";
 import 'react-bootstrap';
 import * as Icon from 'react-bootstrap-icons';
 import './Rodape.css';
-import { Link } from "react-router-dom";
 
 const Rodape = () => {
     const telephone = "+5511958209936";
@@ -26,7 +25,7 @@ const Rodape = () => {
                                 <a href="#">GUINCHO 79</a>
                             </div>
                             <div className="social-icons">
-                                <a href="tel:+55123456789">
+                                <a href="tel:+55958209936">
                                     <button>
                                         <Icon.Telephone className="social-icons" size={25}/>
                                         

@@ -76,7 +76,7 @@
     border: 0;
     padding: 10px;
     border-radius: 50%;
-    top: 30% !important;
+    top: 37% !important;
     left: 15%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -295,7 +295,7 @@
 @media (min-width: 1281px) and (max-width: 1275px) {
 
     .logo {
-        top: 52% !important;
+        top: 55% !important;
     }
 }
 
