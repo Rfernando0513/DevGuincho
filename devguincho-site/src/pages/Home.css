@@ -70,28 +70,6 @@
 
 }
 
-.logo {
-    position: absolute;
-    background-color: var(--lightColor);
-    border: 0;
-    padding: 10px;
-    border-radius: 50%;
-    top: 37% !important;
-    left: 15%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .imgLogo {
-        border-radius: 50%;
-        height: 10vw;
-        width: 10vw;
-        max-height: 80px;
-        max-width: 80px;
-    }
-}
-
 .title {
     text-align: center;
     margin-top: -15px;
@@ -185,12 +163,13 @@
 }
 
 .form-section {
-    height: 550px;
+    max-height: 600px;
     background-color: var(--thirdColor);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20%;
+    padding-bottom: 30px;
 
     .robo {
 
@@ -262,12 +241,13 @@
     }
 
     .form-section {
-        height: 900px;
+        height: 2000px;
+        text-align: center;
+        align-items: center;
+        padding-bottom: 102px;
+        padding-top: 70px;
     }
 
-    .robo {
-        margin-top: 40px;
-    }
 }
 
 

@@ -19,6 +19,7 @@
     color: var(--lightColor);
     max-width: 600px;
     width: 100%;
+    text-align: center;
     align-items: center;
     display: flex;
 

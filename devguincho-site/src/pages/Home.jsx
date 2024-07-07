@@ -35,13 +35,7 @@ function Home() {
                             </Link>
                         </div>
                     </div>
-                </div>
-                <div className="row col-sm-12">
-                    <div className="logo">
-                        <img className="imgLogo" src="img/guincho.png" alt="logo" />
-                        <div />
-                    </div>
-                </div>
+                </div>                
                 <div className="row col-sm-12">
                     <RangeText textRange="↓ SOCORREMOS MAIS DE 1000  PESSOAS POR ANO" />
                 </div>
